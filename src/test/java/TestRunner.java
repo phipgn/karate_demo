@@ -21,7 +21,7 @@ public class TestRunner {
             "classpath:individuals/test.feature")
             .outputCucumberJson(true)
             .outputJunitXml(true)
-            .tags("~@ignore")
+            .tags("~@skipme")
             .parallel(5);
         
         generateReport(results.getReportDir(), "karate-demo");
